@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛩️ Country Towers · Courtyard Commons | Autodesk BIM Studio</title>
+    <meta name="description" content="Autodesk Design Challenge - A Revit-led urban building proposal combining active commercial floors, private homes, and a breathable central courtyard by Team BRAIN.exe_N8G6." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>⛩️</text></svg>">
+    
+    <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      // Fallback for users accidentally opening index.html directly from file explorer (file://)
+      if (window.location.protocol === 'file:') {
+        window.addEventListener('DOMContentLoaded', () => {
+          const app = document.getElementById('app');
+          if (app) {
+            app.innerHTML = `
+              <div style="min-height: 100vh; background: #0c121e; color: #f8fafc; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; padding: 24px;">
+                <div style="max-width: 600px; width: 100%; background: #131c2e; border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 36px; box-shadow: 0 25px 60px rgba(0,0,0,0.6); text-align: center;">
+                  <div style="font-size: 54px; margin-bottom: 14px;">⛩️</div>
+                  <h1 style="font-size: 24px; font-weight: 800; color: #ffffff; margin-bottom: 10px;">Country Towers · Autodesk BIM Studio</h1>
+                  <p style="color: #94a3b8; font-size: 14.5px; line-height: 1.6; margin-bottom: 22px;">
+                    This application uses <strong>Vite ES Modules, Three.js 3D WebGL, and Shaders</strong>. Due to standard browser CORS security policies, ES modules cannot load from a local <code style="color: #38bdf8; background: rgba(56,189,248,0.12); padding: 2px 7px; border-radius: 4px;">file://</code> URL.
+                  </p>
+                  <div style="background: rgba(14,165,233,0.08); border: 1px solid rgba(56,189,248,0.3); border-radius: 14px; padding: 18px; margin-bottom: 24px; text-align: left;">
+                    <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #38bdf8; margin-bottom: 6px;">Your Active Local Host Server</div>
+                    <div style="font-size: 20px; font-weight: 800; color: #ffffff; margin-bottom: 4px;">
+                      <a href="http://localhost:5173" style="color: #38bdf8; text-decoration: underline;">http://localhost:5173</a>
+                    </div>
+                    <div style="font-size: 12.5px; color: #94a3b8; margin-top: 6px;">Network URL: <a href="http://10.125.46.147:5173" style="color: #7dd3fc;">http://10.125.46.147:5173</a></div>
+                  </div>
+                  <a href="http://localhost:5173" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px 20px; background: linear-gradient(135deg, #0284c7, #0369a1); color: #ffffff; font-weight: 700; font-size: 16px; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 18px rgba(2,132,199,0.45);">
+                    <span>Open in Local Host Server (localhost:5173)</span>
+                    <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            `;
+          }
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
